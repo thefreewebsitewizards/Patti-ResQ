@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ResQ a Dog - Journey in Twilight</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&amp;family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3b6cc9", 
+                        "primary-dark": "#2a4f96",
+                        "accent": "#e07a5f", 
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                        "twilight": "#1e2433",
+                        "twilight-deep": "#151a25",
+                        "warm-cream": "#e8e6e1",
+                    },
+                    fontFamily: {
+                        "display": ["Merriweather", "serif"],
+                        "body": ["Lato", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "2xl": "4rem", "full": "9999px"},
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-warm-cream font-body antialiased overflow-x-hidden transition-colors duration-300" id="top">
+<header class="fixed top-0 w-full z-50 transition-all duration-300 bg-background-dark/90 backdrop-blur-md border-b border-[#243047]">
+<div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img src="images/ResQ-logo.png" alt="ResQ" class="h-20 w-auto"/>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="#top">Home</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="#reality">The Reality</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="#process">Process</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="#philosophy">The Approach</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="#contact">Contact</a>
+</nav>
+<button class="md:hidden text-white" aria-expanded="false" aria-controls="mobile-menu">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<div class="md:hidden fixed inset-0 z-[60] hidden" id="mobile-menu">
+<div class="absolute inset-0 bg-background-dark/80 backdrop-blur-sm" data-close-menu="true"></div>
+<div class="relative bg-background-dark/95 backdrop-blur-md border-b border-[#243047] shadow-2xl">
+<div class="max-w-7xl mx-auto px-6 pb-8 pt-2 flex flex-col gap-8">
+<div class="flex items-center justify-between">
+<img src="images/ResQ-logo.png" alt="ResQ" class="h-20 w-auto"/>
+<button class="text-white" aria-label="Close menu" data-close-menu="true">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-6 text-lg">
+<a class="text-gray-300 hover:text-white transition-colors" href="#top">Home</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="#reality">The Reality</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="#process">Process</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="#philosophy">The Approach</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="#waitlist">Waitlist</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="#contact">Contact</a>
+</nav>
+</div>
+</div>
+</div>
+<main class="w-full pt-20">
+<section class="relative min-h-[95vh] flex items-center justify-center overflow-hidden px-4">
+<div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" data-alt="Silhouette of a person and dog looking at sunset" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCaS5KHkoIU2c2L1kgz6pGDhQIYO0bllWzf8nqwdoMdHpabRnGMtNCjEE86lDM7Iv0KnWzzvyA1jy9PNIVK8yzWeQRPTruSvA_qWtS0wpftZfA45GwnPSi386je4Db11ykrzqIQbkLAuAGmmzDaBs0phcEPNT-1yv7rvRqlRaH3phh1vlKP-Vq8hm7OdA1U-ixUN-tsSpQO3mQeKD8SVOEeX2kjhIPO5FtR9fk8IVG-FC-WV-nn8TGZ_CSA2SyEAyDEfUTzSygYQA');"></div>
+<div class="absolute inset-0 z-0 bg-gradient-to-b from-background-dark/80 via-background-dark/50 to-background-dark"></div>
+<div class="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center gap-8 mt-10">
+<span class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/5 backdrop-blur-md border border-white/10 text-warm-cream text-xs font-bold tracking-widest uppercase shadow-xl">
+<span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                    Now accepting new guardians
+                </span>
+<h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[1.1] tracking-tight drop-shadow-2xl">
+                    Train the <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-primary to-accent">Human First</span>
+</h1>
+<p class="text-xl md:text-2xl font-light text-gray-200 max-w-3xl leading-relaxed">
+                    Always with patience and understanding. We build the bond before the leash is ever clipped on, creating a sanctuary of trust.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 mt-8">
+<a class="flex items-center justify-center h-16 px-10 rounded-full bg-primary hover:bg-primary-dark text-white font-bold text-lg transition-all transform hover:scale-105 shadow-xl shadow-blue-900/40" href="#waitlist">
+                        Join the ResQ Waitlist
+                    </a>
+<a class="flex items-center justify-center h-16 px-10 rounded-full bg-white/5 hover:bg-white/10 backdrop-blur-md border border-white/10 text-white font-medium text-lg transition-all hover:border-white/30" href="#philosophy">
+<span class="material-symbols-outlined mr-3">play_circle</span>
+                        Our Philosophy
+                    </a>
+</div>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce text-white/30 hover:text-white/60 transition-colors cursor-pointer" role="button" aria-label="Scroll to the next section" data-scroll="#reality">
+</div>
+</section>
+<section class="py-32 px-6 md:px-12 bg-background-dark relative" id="reality">
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<div class="w-full h-80 md:h-96 rounded-[3rem] overflow-hidden mb-12 relative shadow-2xl border border-white/5">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent z-10"></div>
+<div class="w-full h-full bg-cover bg-center opacity-80" style="background-image: url('images/The-unseen-struggle.png');"></div>
+<div class="absolute bottom-6 left-0 right-0 z-20">
+<p class="text-white/60 text-sm font-medium tracking-widest uppercase">The unseen struggle</p>
+</div>
+</div>
+<h2 class="font-display text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
+                    Too many adoptions fail because <br/> <span class="text-accent italic">love isn't enough.</span>
+</h2>
+<p class="text-lg md:text-xl text-gray-400 leading-relaxed font-light">
+                    We see it every day. Good people with huge hearts bring a dog home, expecting instant gratitude. Instead, they find fear, reactivity, and confusion. Without preparation, the dream of companionship becomes a source of stress. ResQ bridges the gap between intention and understanding.
+                </p>
+</div>
+</section>
+<section class="py-32 px-6 md:px-12 bg-twilight-deep border-y border-[#243047]" id="process">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div>
+<div class="flex items-center gap-3 text-primary font-bold uppercase tracking-wider text-xs mb-4">
+<span class="w-6 h-[1px] bg-primary"></span>
+                            The Roadmap
+                        </div>
+<h2 class="font-display text-4xl md:text-5xl font-bold text-white">How ResQ Works</h2>
+</div>
+<p class="text-gray-400 max-w-md text-right md:text-left leading-relaxed">
+                        A structured journey designed to move you from uncertainty to confident guardianship.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+<div class="hidden md:block absolute top-12 left-[16%] right-[16%] h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent border-t border-dashed border-primary/30 z-0"></div>
+<div class="relative z-10 flex flex-col items-center text-center group">
+<div class="w-24 h-24 rounded-full bg-twilight border border-[#243047] flex items-center justify-center mb-8 group-hover:border-primary/50 group-hover:shadow-[0_0_30px_-5px_rgba(59,108,201,0.3)] transition-all duration-500">
+<span class="material-symbols-outlined text-4xl text-white group-hover:text-primary transition-colors">psychology</span>
+</div>
+<h3 class="font-display text-2xl font-bold text-white mb-4">Self-Reflection</h3>
+<p class="text-gray-400 leading-relaxed">
+                            Before meeting a dog, we assess your energy, lifestyle, and expectations to ensure you're ready to lead with calm.
+                        </p>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center group">
+<div class="w-24 h-24 rounded-full bg-twilight border border-[#243047] flex items-center justify-center mb-8 group-hover:border-primary/50 group-hover:shadow-[0_0_30px_-5px_rgba(59,108,201,0.3)] transition-all duration-500">
+<span class="material-symbols-outlined text-4xl text-white group-hover:text-primary transition-colors">school</span>
+</div>
+<h3 class="font-display text-2xl font-bold text-white mb-4">Education</h3>
+<p class="text-gray-400 leading-relaxed">
+                            Deep-dive modules on canine body language, decompression techniques, and setting boundaries without force.
+                        </p>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center group">
+<div class="w-24 h-24 rounded-full bg-twilight border border-[#243047] flex items-center justify-center mb-8 group-hover:border-primary/50 group-hover:shadow-[0_0_30px_-5px_rgba(59,108,201,0.3)] transition-all duration-500">
+<span class="material-symbols-outlined text-4xl text-white group-hover:text-primary transition-colors">handshake</span>
+</div>
+<h3 class="font-display text-2xl font-bold text-white mb-4">Connection</h3>
+<p class="text-gray-400 leading-relaxed">
+                            Guided introductions and ongoing support as you welcome your new companion home, ensuring the bond holds.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 bg-primary-dark/20 relative overflow-hidden flex items-center justify-center" id="stories">
+<div class="absolute inset-0 bg-twilight-deep opacity-90 z-0"></div>
+<div class="absolute top-0 left-0 w-full h-full opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] z-0"></div>
+<div class="max-w-5xl mx-auto text-center relative z-10 px-4">
+<span class="material-symbols-outlined text-6xl text-primary/30 mb-6">format_quote</span>
+<blockquote class="font-display text-3xl md:text-5xl lg:text-6xl font-medium italic text-white leading-tight mb-8">
+                    "ResQ is built on the belief that successful adoptions begin with preparation, not pressure."
+                </blockquote>
+<div class="w-24 h-1 bg-accent mx-auto rounded-full"></div>
+</div>
+</section>
+<section class="py-32 px-6 md:px-12 bg-background-dark relative overflow-hidden" id="philosophy">
+<div class="absolute top-20 right-0 w-1/2 h-full bg-primary/5 blur-[150px] rounded-full pointer-events-none"></div>
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center relative z-10">
+<div class="flex flex-col gap-10 order-2 lg:order-1">
+<div>
+<div class="flex items-center gap-3 text-primary font-bold uppercase tracking-wider text-xs mb-4">
+<span class="w-6 h-[1px] bg-primary"></span>
+                            The Philosophy
+                        </div>
+<h2 class="font-display text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+                            Why Train the <br/> Human First?
+                        </h2>
+<div class="space-y-6 text-lg text-gray-400 leading-relaxed font-light">
+<p>
+                                We focus on preparation over pressure. The chaotic energy of a new home can be overwhelming for a rescue dog. By calming the human first, we create a sanctuary of safety.
+                            </p>
+<p>
+                                Building a bond takes time, understanding, and the right mindset before we ever worry about "sit" or "stay". It's about learning the language of silence and trust.
+                            </p>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="p-8 rounded-[2rem] bg-twilight/50 border border-[#243047] hover:border-primary/50 hover:bg-twilight transition-all duration-300 group">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 group-hover:scale-110 transition-transform block">spa</span>
+<h3 class="font-display text-white text-xl font-bold mb-3">Mindful Patience</h3>
+<p class="text-sm text-gray-400 leading-relaxed">Learning to wait for the dog to invite interaction, rather than forcing it.</p>
+</div>
+<div class="p-8 rounded-[2rem] bg-twilight/50 border border-[#243047] hover:border-primary/50 hover:bg-twilight transition-all duration-300 group">
+<span class="material-symbols-outlined text-primary text-4xl mb-6 group-hover:scale-110 transition-transform block">diversity_1</span>
+<h3 class="font-display text-white text-xl font-bold mb-3">Deep Bonding</h3>
+<p class="text-sm text-gray-400 leading-relaxed">Connection rooted in mutual respect, creating a partnership not a dictatorship.</p>
+</div>
+</div>
+</div>
+<div class="relative order-1 lg:order-2">
+<div class="aspect-[4/5] rounded-[3rem] overflow-hidden relative shadow-2xl border border-white/5 group">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10 opacity-80 group-hover:opacity-60 transition-opacity duration-500"></div>
+<div class="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Close up of a dog resting head on human hand" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAKuMgqxrSGPQGZjZ0ubu0RmocCTdQOArEb1KqrbmYN857s867TMHb9QTIx8IZz7jacbJ1svVPFrfr18yBZvs_VwEssLYPKXjt-i3pS6Y0NDe3WnBkDVSeBjWv3iSYrqfYGjw5j7TV0URvpJakAoK1KhDMwphee6TIfC_sxHTpA7OzCdKYxO4nPVCPxDvuYQe9GFT7uR8f7j8Hf8WggHNzDuDpIjACBV3fUvhIYjioiozAP29jP9lxYfdNo4OsQnENVPHK4N1TNMA');"></div>
+<div class="absolute bottom-10 left-10 right-10 z-20">
+<div class="bg-white/10 backdrop-blur-xl p-8 rounded-2xl border border-white/20 shadow-lg">
+<span class="material-symbols-outlined text-accent mb-2 text-2xl">favorite</span>
+<p class="text-white font-display text-xl font-medium italic leading-normal">"The most powerful command is a calm presence."</p>
+</div>
+</div>
+</div>
+<div class="absolute -top-10 -right-10 w-40 h-40 border border-white/5 rounded-full z-[-1]"></div>
+<div class="absolute -bottom-10 -left-10 w-64 h-64 bg-primary rounded-full z-[-1] opacity-10 blur-3xl"></div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 md:px-12 bg-twilight-deep">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Who This Is For</h2>
+<p class="text-gray-400 max-w-2xl mx-auto text-lg font-light">
+                        Whether you are new to dogs or an experienced owner facing new challenges, our approach adapts to your journey.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-twilight rounded-[2.5rem] p-10 border border-[#243047] shadow-xl hover:shadow-2xl hover:border-primary/30 transition-all duration-300 flex flex-col">
+<div class="w-16 h-16 rounded-2xl bg-background-dark flex items-center justify-center mb-8 text-primary">
+<span class="material-symbols-outlined text-3xl">volunteer_activism</span>
+</div>
+<h3 class="font-display text-2xl font-bold text-white mb-4">First-Time Adopters</h3>
+<p class="text-gray-400 leading-relaxed mb-8 flex-grow">
+                            You have a big heart but no experience. You want to do everything "right" but feel overwhelmed by the conflicting advice online.
+                        </p>
+<ul class="space-y-3 text-sm text-gray-500">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Learn the basics of dog psychology</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Set up your home for success</li>
+</ul>
+</div>
+<div class="bg-twilight rounded-[2.5rem] p-10 border border-[#243047] shadow-xl hover:shadow-2xl hover:border-primary/30 transition-all duration-300 flex flex-col relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-bl-[100px] pointer-events-none"></div>
+<div class="w-16 h-16 rounded-2xl bg-background-dark flex items-center justify-center mb-8 text-primary">
+<span class="material-symbols-outlined text-3xl">replay</span>
+</div>
+<h3 class="font-display text-2xl font-bold text-white mb-4">Returning Owners</h3>
+<p class="text-gray-400 leading-relaxed mb-8 flex-grow">
+                            It's been years since your last dog, or maybe your previous pet was "easy." You realize this new chapter requires a fresh perspective.
+                        </p>
+<ul class="space-y-3 text-sm text-gray-500">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Unlearn outdated training methods</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Adapt to a new dog's personality</li>
+</ul>
+</div>
+<div class="bg-twilight rounded-[2.5rem] p-10 border border-[#243047] shadow-xl hover:shadow-2xl hover:border-primary/30 transition-all duration-300 flex flex-col">
+<div class="w-16 h-16 rounded-2xl bg-background-dark flex items-center justify-center mb-8 text-primary">
+<span class="material-symbols-outlined text-3xl">emergency_home</span>
+</div>
+<h3 class="font-display text-2xl font-bold text-white mb-4">Current Strugglers</h3>
+<p class="text-gray-400 leading-relaxed mb-8 flex-grow">
+                            You've already adopted, but things aren't going as planned. The honeymoon phase is over, and behavioral issues are surfacing.
+                        </p>
+<ul class="space-y-3 text-sm text-gray-500">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Decompress a stressful household</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Rebuild damaged trust</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 md:px-12 bg-background-dark border-y border-[#243047]" id="about">
+<div class="max-w-6xl w-full mx-auto flex flex-col md:flex-row md:items-start items-center gap-16">
+<div class="relative shrink-0">
+<div class="w-64 h-72 md:w-80 md:h-80 rounded-[3rem] border border-white/10 p-2 rotate-3 hover:rotate-0 transition-transform duration-500">
+<div class="w-full h-full rounded-[2.5rem] bg-cover bg-center overflow-hidden grayscale hover:grayscale-0 transition-all duration-500" data-alt="Portrait of a smiling woman outdoors" style="background-image: url('images/Profile-image.jpg');"></div>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center border-4 border-background-dark shadow-lg">
+<span class="material-symbols-outlined text-2xl">format_quote</span>
+</div>
+</div>
+<div class="space-y-8 text-center md:text-left md:flex-1">
+<h2 class="font-display text-3xl md:text-4xl font-bold text-white leading-tight">Guidance for Life’s <br/> In-Between Seasons</h2>
+<p class="text-lg text-gray-300 leading-relaxed font-light">
+                        I’m Patti L. Curtin, the founder of Journey in Twilight—a place for education, reflection, and practical support during life’s in-between seasons. Journey in Twilight was created to hold space for moments that require patience, understanding, and compassionate guidance rather than quick answers.
+                        <br/><br/>
+                        One of the most meaningful expressions of that work is ResQ a Dog: Save a Life, Training the Human. I created ResQ after years of working alongside rescue dogs and the humans who love them, where I repeatedly saw well-intentioned adoptions struggle, not because of lack of love, but because of lack of preparation and understanding.
+                        <br/><br/>
+                        ResQ focuses on slowing the adoption process down and training the human first. I help people honestly assess their lifestyle, expectations, and capacity for care, while learning how to recognize a dog’s needs beyond first impressions. This approach creates safer adoptions, stronger bonds, and better outcomes for both dogs and humans.
+                        <br/><br/>
+                        My work is rooted in patience, trust-building, and the belief that when education is delivered with compassion, rescue dogs are given their best chance at a stable, loving home - and humans are given the confidence to succeed.
+                    </p>
+<div class="pt-4 border-t border-white/5 inline-block w-full">
+<p class="text-white font-display font-bold text-xl tracking-wide">Patti L. Curtin</p>
+<p class="text-primary text-sm uppercase tracking-widest mt-1 font-bold">Founder &amp; Lead Behaviorist</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 md:px-12 bg-background-dark" id="faq">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-24">
+<h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6">Frequently Asked Questions</h2>
+<p class="text-gray-400 text-lg">Understanding our unique approach to rehabilitation.</p>
+</div>
+<div class="flex flex-col gap-6">
+<details class="group bg-transparent rounded-2xl border-b border-[#243047] open:bg-twilight/20 open:border-transparent transition-all duration-500">
+<summary class="flex justify-between items-center cursor-pointer p-8 font-display font-bold text-xl text-white list-none hover:text-primary transition-colors">
+<span>How is this different from obedience training?</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 group-open:text-primary">expand_more</span>
+</summary>
+<div class="px-8 pb-8 text-gray-400 leading-relaxed text-lg font-light">
+                            Obedience training focuses on commands. We focus on state of mind. A dog that can "sit" but is anxious isn't truly rehabilitated. We address the root emotions first.
+                        </div>
+</details>
+<details class="group bg-transparent rounded-2xl border-b border-[#243047] open:bg-twilight/20 open:border-transparent transition-all duration-500">
+<summary class="flex justify-between items-center cursor-pointer p-8 font-display font-bold text-xl text-white list-none hover:text-primary transition-colors">
+<span>Do I need prior experience with dogs?</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 group-open:text-primary">expand_more</span>
+</summary>
+<div class="px-8 pb-8 text-gray-400 leading-relaxed text-lg font-light">
+                            Not at all. In fact, sometimes having no prior "training" habits is better. We look for open hearts and patience above technical skill.
+                        </div>
+</details>
+<details class="group bg-transparent rounded-2xl border-b border-[#243047] open:bg-twilight/20 open:border-transparent transition-all duration-500">
+<summary class="flex justify-between items-center cursor-pointer p-8 font-display font-bold text-xl text-white list-none hover:text-primary transition-colors">
+<span>How long is the waitlist?</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 group-open:text-primary">expand_more</span>
+</summary>
+<div class="px-8 pb-8 text-gray-400 leading-relaxed text-lg font-light">
+                            We accept new cohorts every quarter. This allows us to give dedicated attention to each human-dog pair. The current wait time is approximately 4-6 weeks.
+                        </div>
+</details>
+<details class="group bg-transparent rounded-2xl border-b border-[#243047] open:bg-twilight/20 open:border-transparent transition-all duration-500">
+<summary class="flex justify-between items-center cursor-pointer p-8 font-display font-bold text-xl text-white list-none hover:text-primary transition-colors">
+<span>Is this program remote or in-person?</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 group-open:text-primary">expand_more</span>
+</summary>
+<div class="px-8 pb-8 text-gray-400 leading-relaxed text-lg font-light">
+                            We offer a hybrid model. The "Train the Human" theoretical modules are online, while the practical bonding sessions are in-person at our sanctuary or your home.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+<section class="py-32 px-6 md:px-12 bg-gradient-to-b from-background-dark to-[#0c1017]" id="waitlist">
+<div class="max-w-6xl mx-auto bg-[#1a2130] rounded-[4rem] p-10 md:p-20 border border-[#243047] relative overflow-hidden shadow-2xl">
+<div class="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div class="inline-block px-4 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest">
+                            Limited Spots Available
+                        </div>
+<h2 class="font-display text-4xl md:text-6xl font-bold text-white leading-tight">
+                            Start Your Journey <br/> of <span class="text-primary italic">Compassion</span>
+</h2>
+<p class="text-xl text-gray-400 font-light leading-relaxed">
+                            Join the waitlist to receive our free "Decompression Guide" and be notified when our next enrollment opens. Take the first step towards a deeper bond.
+                        </p>
+<div class="flex flex-col gap-4 text-gray-300 mt-8">
+<div class="flex items-center gap-4 bg-background-dark/50 p-4 rounded-2xl border border-white/5">
+<span class="material-symbols-outlined text-accent">check_circle</span>
+<span class="font-medium">Exclusive early access to enrollment</span>
+</div>
+<div class="flex items-center gap-4 bg-background-dark/50 p-4 rounded-2xl border border-white/5">
+<span class="material-symbols-outlined text-accent">check_circle</span>
+<span class="font-medium">Weekly calming tips &amp; resource library</span>
+</div>
+<div class="flex items-center gap-4 bg-background-dark/50 p-4 rounded-2xl border border-white/5">
+<span class="material-symbols-outlined text-accent">check_circle</span>
+<span class="font-medium">Community support network</span>
+</div>
+</div>
+</div>
+<div class="w-full bg-background-dark p-10 rounded-[2.5rem] border border-[#243047] shadow-xl relative">
+<div class="absolute -top-6 -right-6 w-12 h-12 bg-accent rounded-full flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-white">edit</span>
+</div>
+<form class="flex flex-col gap-6" id="waitlist-form" novalidate>
+<div class="space-y-2">
+<label class="text-sm font-bold text-gray-400 ml-2 uppercase tracking-wider" for="name">Full Name</label>
+<input class="w-full h-14 px-6 rounded-2xl bg-twilight border border-[#243047] focus:border-primary focus:bg-[#1a2130] focus:ring-1 focus:ring-primary text-white placeholder-gray-600 transition-all outline-none" id="name" name="name" placeholder="Jane Doe" type="text" autocomplete="name"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-gray-400 ml-2 uppercase tracking-wider" for="email">Email Address</label>
+<input class="w-full h-14 px-6 rounded-2xl bg-twilight border border-[#243047] focus:border-primary focus:bg-[#1a2130] focus:ring-1 focus:ring-primary text-white placeholder-gray-600 transition-all outline-none" id="email" name="email" placeholder="jane@example.com" type="email" autocomplete="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-gray-400 ml-2 uppercase tracking-wider" for="phone">Phone (Optional)</label>
+<input class="w-full h-14 px-6 rounded-2xl bg-twilight border border-[#243047] focus:border-primary focus:bg-[#1a2130] focus:ring-1 focus:ring-primary text-white placeholder-gray-600 transition-all outline-none" id="phone" name="phone" placeholder="(555) 123-4567" type="tel" autocomplete="tel"/>
+</div>
+<button class="mt-4 w-full h-16 bg-primary hover:bg-primary-dark text-white font-bold text-lg rounded-2xl transition-all flex items-center justify-center gap-3 shadow-lg shadow-primary/25 hover:shadow-primary/40 transform hover:-translate-y-1" type="submit" data-submit="waitlist">
+<span data-submit-text="true">Join the Waitlist</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<div class="hidden mt-2 rounded-2xl border border-[#243047] bg-twilight/60 px-4 py-3 text-sm text-gray-300" id="waitlist-status" role="status" aria-live="polite"></div>
+<div class="hidden mt-2 rounded-2xl border border-accent/40 bg-accent/10 px-4 py-3 text-sm text-accent" id="waitlist-error" role="alert" aria-live="assertive"></div>
+<p class="text-xs text-center text-gray-500">We respect your privacy. Unsubscribe at any time.</p>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-background-dark border-t border-[#243047] py-16 px-6 md:px-12" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1 space-y-6">
+<div class="flex items-center gap-3">
+<img src="images/ResQ-logo.png" alt="ResQ" class="h-20 w-auto"/>
+</div>
+<p class="text-gray-500 text-sm leading-relaxed">
+                        Compassionate guidance for rescue dogs and their humans. Training the heart before the habit.
+                    </p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-display">Explore</h4>
+<ul class="space-y-4 text-sm text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#top">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="#about">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#philosophy">The Approach</a></li>
+<li><a class="hover:text-primary transition-colors" href="#stories">Success Stories</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-display">Support</h4>
+<ul class="space-y-4 text-sm text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#faq">FAQ</a></li>
+<li><a class="hover:text-primary transition-colors" href="mailto:journeyintwilight@gmail.com">Contact Support</a></li>
+<li><a class="hover:text-primary transition-colors" href="#privacy-policy" data-modal="privacy">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#terms-of-service" data-modal="terms">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-display">Contact</h4>
+<ul class="space-y-4 text-sm text-gray-400">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm text-primary">mail</span>
+                            journeyintwilight@gmail.com
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+                            Portland, OR
+                        </li>
+<li class="flex gap-4 mt-6">
+<a class="w-10 h-10 rounded-full bg-twilight border border-[#243047] flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110" href="https://www.instagram.com" target="_blank" rel="noreferrer" title="Instagram">
+<span class="text-xs font-bold">IG</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-twilight border border-[#243047] flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110" href="https://facebook.com/profile.php?id=61587270763612" target="_blank" rel="noreferrer" title="Facebook">
+<span class="text-xs font-bold">FB</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-twilight border border-[#243047] flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110" href="https://www.twitter.com" target="_blank" rel="noreferrer" title="Twitter">
+<span class="text-xs font-bold">TW</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-[#243047] pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+<p>© 2023 Journey in Twilight / ResQ a Dog. All rights reserved.</p>
+<p>Designed with compassion.</p>
+</div>
+</div>
+</footer>
+
+<div class="fixed inset-0 z-50 hidden" id="privacy-policy" role="dialog" aria-modal="true" aria-hidden="true">
+<div class="absolute inset-0 bg-background-dark/80 backdrop-blur-sm" data-close-modal="true"></div>
+<div class="relative max-w-3xl mx-auto mt-20 bg-[#1a2130] border border-[#243047] rounded-[2.5rem] p-10 text-gray-300 shadow-2xl">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-white font-display text-2xl font-bold">Privacy Policy</h3>
+<button class="text-white" data-close-modal="true" aria-label="Close privacy policy">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-4 text-sm leading-relaxed">
+<p>We collect only the information you share with us to provide waitlist updates, resources, and program notifications.</p>
+<p>Your details are stored securely and never sold. You can unsubscribe at any time through the emails we send.</p>
+<p>For Journey in Twilight, contact journeyintwilight@gmail.com. For ResQ a Dog, contact resqadog1@gmail.com.</p>
+</div>
+<div class="mt-8 flex justify-end">
+<button class="h-12 px-6 rounded-full bg-primary text-white font-bold hover:bg-primary-dark transition-colors" data-close-modal="true">Close</button>
+</div>
+</div>
+</div>
+
+<div class="fixed inset-0 z-50 hidden" id="terms-of-service" role="dialog" aria-modal="true" aria-hidden="true">
+<div class="absolute inset-0 bg-background-dark/80 backdrop-blur-sm" data-close-modal="true"></div>
+<div class="relative max-w-3xl mx-auto mt-20 bg-[#1a2130] border border-[#243047] rounded-[2.5rem] p-10 text-gray-300 shadow-2xl">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-white font-display text-2xl font-bold">Terms of Service</h3>
+<button class="text-white" data-close-modal="true" aria-label="Close terms of service">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-4 text-sm leading-relaxed">
+<p>Journey in Twilight and ResQ a Dog provide educational content and guidance intended to support reflection and rescue dog guardianship.</p>
+<p>Participation in the waitlist does not guarantee enrollment. We contact applicants as spots open.</p>
+<p>By joining, you agree to receive program updates and resources, with the option to opt out at any time.</p>
+</div>
+<div class="mt-8 flex justify-end">
+<button class="h-12 px-6 rounded-full bg-primary text-white font-bold hover:bg-primary-dark transition-colors" data-close-modal="true">Close</button>
+</div>
+</div>
+</div>
+
+<script>
+const scrollToTarget = (target) => {
+const element = document.querySelector(target);
+if (!element) return;
+element.scrollIntoView({ behavior: "smooth", block: "start" });
+};
+
+const handleAnchorClick = (event) => {
+const anchor = event.currentTarget;
+const href = anchor.getAttribute("href");
+if (!href || !href.startsWith("#")) return;
+const target = href === "#top" ? "body" : href;
+const element = document.querySelector(target);
+if (!element) return;
+event.preventDefault();
+scrollToTarget(target === "body" ? "body" : target);
+};
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+anchor.addEventListener("click", handleAnchorClick);
+});
+
+const scrollTrigger = document.querySelector("[data-scroll]");
+if (scrollTrigger) {
+scrollTrigger.addEventListener("click", () => {
+const target = scrollTrigger.getAttribute("data-scroll");
+if (target) scrollToTarget(target);
+});
+}
+
+const menuButton = document.querySelector("header button[aria-controls='mobile-menu']");
+const mobileMenu = document.getElementById("mobile-menu");
+const closeMenuButtons = mobileMenu ? mobileMenu.querySelectorAll("[data-close-menu]") : [];
+
+const toggleMenu = (open) => {
+if (!mobileMenu || !menuButton) return;
+const isOpen = open ?? mobileMenu.classList.contains("hidden");
+mobileMenu.classList.toggle("hidden", !isOpen);
+menuButton.setAttribute("aria-expanded", String(isOpen));
+document.body.classList.toggle("overflow-hidden", isOpen);
+};
+
+if (menuButton && mobileMenu) {
+menuButton.addEventListener("click", () => toggleMenu());
+closeMenuButtons.forEach((button) => button.addEventListener("click", () => toggleMenu(false)));
+mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => toggleMenu(false)));
+document.addEventListener("keydown", (event) => {
+if (event.key === "Escape" && !mobileMenu.classList.contains("hidden")) toggleMenu(false);
+});
+}
+
+const modalLinks = document.querySelectorAll("[data-modal]");
+const modalOverlays = document.querySelectorAll("[data-close-modal]");
+
+const setModalOpen = (modal, open) => {
+if (!modal) return;
+modal.classList.toggle("hidden", !open);
+modal.setAttribute("aria-hidden", String(!open));
+document.body.classList.toggle("overflow-hidden", open);
+};
+
+modalLinks.forEach((link) => {
+link.addEventListener("click", (event) => {
+const modalId = link.getAttribute("href");
+const modal = modalId ? document.querySelector(modalId) : null;
+if (!modal) return;
+event.preventDefault();
+setModalOpen(modal, true);
+});
+});
+
+modalOverlays.forEach((overlay) => {
+overlay.addEventListener("click", (event) => {
+const modal = event.currentTarget.closest("[role='dialog']");
+setModalOpen(modal, false);
+});
+});
+
+document.addEventListener("keydown", (event) => {
+if (event.key !== "Escape") return;
+document.querySelectorAll("[role='dialog']").forEach((modal) => {
+if (!modal.classList.contains("hidden")) setModalOpen(modal, false);
+});
+});
+
+const waitlistForm = document.getElementById("waitlist-form");
+const waitlistStatus = document.getElementById("waitlist-status");
+const waitlistError = document.getElementById("waitlist-error");
+const waitlistSubmit = document.querySelector("[data-submit='waitlist']");
+const submitText = waitlistSubmit ? waitlistSubmit.querySelector("[data-submit-text]") : null;
+
+const setFieldState = (field, valid) => {
+if (!field) return;
+field.classList.toggle("border-accent", !valid);
+field.classList.toggle("ring-1", !valid);
+field.classList.toggle("ring-accent/40", !valid);
+field.setAttribute("aria-invalid", String(!valid));
+};
+
+const showStatus = (message) => {
+if (!waitlistStatus) return;
+waitlistStatus.textContent = message;
+waitlistStatus.classList.remove("hidden");
+};
+
+const showError = (message) => {
+if (!waitlistError) return;
+waitlistError.textContent = message;
+waitlistError.classList.remove("hidden");
+};
+
+const clearMessages = () => {
+if (waitlistStatus) waitlistStatus.classList.add("hidden");
+if (waitlistError) waitlistError.classList.add("hidden");
+};
+
+const setLoading = (loading) => {
+if (!waitlistSubmit || !submitText) return;
+waitlistSubmit.disabled = loading;
+waitlistSubmit.classList.toggle("opacity-70", loading);
+waitlistSubmit.classList.toggle("cursor-not-allowed", loading);
+waitlistSubmit.classList.toggle("pointer-events-none", loading);
+submitText.textContent = loading ? "Submitting..." : "Join the Waitlist";
+waitlistForm?.setAttribute("aria-busy", String(loading));
+};
+
+if (waitlistForm) {
+waitlistForm.addEventListener("submit", (event) => {
+event.preventDefault();
+clearMessages();
+
+const nameField = waitlistForm.querySelector("#name");
+const emailField = waitlistForm.querySelector("#email");
+const phoneField = waitlistForm.querySelector("#phone");
+const nameValue = nameField?.value.trim() ?? "";
+const emailValue = emailField?.value.trim() ?? "";
+const phoneValue = phoneField?.value.trim() ?? "";
+
+const nameValid = nameValue.length >= 2;
+const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue);
+const phoneDigits = phoneValue.replace(/\D/g, "");
+const phoneValid = !phoneValue || phoneDigits.length >= 10;
+
+setFieldState(nameField, nameValid);
+setFieldState(emailField, emailValid);
+setFieldState(phoneField, phoneValid);
+
+if (!nameValid || !emailValid || !phoneValid) {
+showError("Please check your details and try again.");
+return;
+}
+
+setLoading(true);
+
+const shouldFail = emailValue.toLowerCase().includes("fail") || nameValue.toLowerCase().includes("test");
+
+setTimeout(() => {
+setLoading(false);
+if (shouldFail) {
+showError("We couldn't add you right now. Please try again in a moment.");
+return;
+}
+showStatus("You're on the waitlist. We'll reach out with next steps soon.");
+waitlistForm.reset();
+}, 1200);
+});
+}
+
+const faqDetails = document.querySelectorAll("#faq details");
+faqDetails.forEach((detail) => {
+detail.addEventListener("toggle", () => {
+if (!detail.open) return;
+faqDetails.forEach((other) => {
+if (other !== detail) other.open = false;
+});
+});
+});
+</script>
+
+</body></html>
