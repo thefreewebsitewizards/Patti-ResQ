@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ResQ a Dog - The Unseen Struggle</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5b5bd6",
+                        "primary-dark": "#4a49b7",
+                        "background-light": "#f6f4f9",
+                        "background-dark": "#0b1024",
+                        "surface": "#161b33",
+                        "surface-highlight": "#1d2240",
+                        "twilight": "#141a33",
+                        "twilight-deep": "#0d1228",
+                        "warm-cream": "#efe9f4",
+                    },
+                    fontFamily: {
+                        "display": ["Georgia", "serif"],
+                        "body": ["Lora", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Georgia&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-body antialiased overflow-x-hidden">
+<div class="fixed inset-0 z-0 bg-[#0f0f2d]">
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('images/Northern-lights-over-a-starry-sky.png');"></div>
+<div class="absolute inset-0 bg-[#0f0f2d]/55"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-[#101022]/70 via-transparent to-[#101022]/80"></div>
+</div>
+<div class="relative z-10">
+<header class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent border-transparent" data-opaque-classes="bg-background-dark/90">
+<div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<img src="images/ResQ-logo.png" alt="ResQ" class="h-16 w-24"/>
+<div class="text-[11px] md:text-xs text-white/80 tracking-wide">A Journey in Twilight™ Course</div>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="index.html">Home</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="theUnseenStruggle.html">Unseen Struggle</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="about.html">About</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="faq.html">FAQ</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="opt-in.html">Opt-In</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="index.html#reality">The Reality</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="index.html#philosophy">The Approach</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="index.html#contact">Contact</a>
+</nav>
+<button class="md:hidden text-white" aria-expanded="false" aria-controls="mobile-menu">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<div class="md:hidden fixed inset-0 z-[60] hidden" id="mobile-menu">
+<div class="absolute inset-0 bg-background-dark/80 backdrop-blur-sm" data-close-menu="true"></div>
+<div class="relative bg-background-dark/95 backdrop-blur-md border-b border-[#243047] shadow-2xl">
+<div class="max-w-7xl mx-auto px-6 pb-8 pt-2 flex flex-col gap-8">
+<div class="flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<img src="images/ResQ-logo.png" alt="ResQ" class="h-16 w-24"/>
+<div class="text-[11px] md:text-xs text-white/80 tracking-wide">A Journey in Twilight™ Course</div>
+</div>
+<button class="text-white" aria-label="Close menu" data-close-menu="true">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-6 text-lg">
+<a class="text-gray-300 hover:text-white transition-colors" href="index.html">Home</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="theUnseenStruggle.html">Unseen Struggle</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="about.html">About</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="faq.html">FAQ</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="opt-in.html">Opt-In</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="index.html#reality">The Reality</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="index.html#philosophy">The Approach</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="index.html#contact">Contact</a>
+</nav>
+</div>
+</div>
+</div>
+<main class="flex flex-col items-center w-full pt-24">
+<!-- Section 1: Hero -->
+<section class="w-full max-w-[960px] px-4 py-8 lg:px-0">
+<div class="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl bg-surface-highlight group">
+<img alt="Golden retrievers under the northern lights" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Golden retrievers under the northern lights" src="images/16,9-aspect-ratio-Golden-Retrievers-under-the-Northern-Lights.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 w-full p-6 lg:p-10 flex justify-center md:justify-end">
+    </div>
+</div>
+<div class="flex flex-col gap-6 mt-12 max-w-3xl mx-auto px-4 lg:px-0">
+    <h1 class="md:block text-white font-display font-bold text-lg lg:text-3xl tracking-tight leading-none drop-shadow-lg md:mr-12 lg:mr-20">
+                        THE UNSEEN STRUGGLE
+                    </h1>
+<p class="text-slate-700 dark:text-slate-300 text-lg lg:text-xl leading-relaxed font-body">
+                    Too many adoptions fail not because of the dog, but because the human wasn't ready. The initial excitement fades when faced with the stark reality of a traumatized animal.
+                </p>
+<p class="text-slate-700 dark:text-slate-300 text-lg lg:text-xl leading-relaxed font-body">
+                    We see it every day: hopeful hearts open their homes, expecting instant connection and gratitude, only to find a creature that is terrified, withdrawn, or defensive.
+                </p>
+<p class="text-slate-700 dark:text-slate-300 text-lg lg:text-xl leading-relaxed font-body">
+                    Instead, they’re met with fear, confusion, and behavioral challenges they don't understand, leading to frustration for the owner and further isolation for the dog.
+                </p>
+<p class="text-slate-700 dark:text-slate-300 text-lg lg:text-xl leading-relaxed font-body">
+                    Without preparation, good intentions crumble. The dog is returned, more broken than before, and the human is left feeling like a failure, hesitant to try again.
+                </p>
+<p class="text-slate-700 dark:text-slate-300 text-lg lg:text-xl leading-relaxed font-body border-l-4 border-primary pl-6 italic">
+                    ResQ bridges the gap by equipping humans with the emotional intelligence and practical tools needed to heal these invisible wounds before the leash is ever clipped on.
+                </p>
+</div>
+</section>
+<!-- Section 2: The R-E-S-Q Method -->
+<section class="w-full bg-background-dark/40 backdrop-blur-sm py-14 md:py-20 px-4">
+<div class="max-w-[1100px] lg:max-w-[1220px] mx-auto">
+<h2 class="text-center text-slate-900 dark:text-white font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-10 md:mb-16">The R-E-S-Q Method</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+<!-- R -->
+<div class="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md text-center sm:text-left group">
+<div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary font-display text-2xl sm:text-3xl font-bold group-hover:bg-primary group-hover:text-white transition-colors duration-300 mx-auto sm:mx-0">R</div>
+<h3 class="text-slate-900 dark:text-white font-display text-xl sm:text-2xl font-semibold">Readiness</h3>
+<p class="text-slate-600 dark:text-slate-300 font-body text-base sm:text-lg leading-relaxed">
+                            Before choosing a dog, we look at your life, energy, and expectations to make sure you’re truly prepared.
+                        </p>
+</div>
+<!-- E -->
+<div class="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md text-center sm:text-left group">
+<div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary font-display text-2xl sm:text-3xl font-bold group-hover:bg-primary group-hover:text-white transition-colors duration-300 mx-auto sm:mx-0">E</div>
+<h3 class="text-slate-900 dark:text-white font-display text-xl sm:text-2xl font-semibold">Environment</h3>
+<p class="text-slate-600 dark:text-slate-300 font-body text-base sm:text-lg leading-relaxed">
+                            We shape your home and daily rhythm into a safe, predictable space where a rescue dog can settle and feel secure.
+                        </p>
+</div>
+<!-- S -->
+<div class="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md text-center sm:text-left group">
+<div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary font-display text-2xl sm:text-3xl font-bold group-hover:bg-primary group-hover:text-white transition-colors duration-300 mx-auto sm:mx-0">S</div>
+<h3 class="text-slate-900 dark:text-white font-display text-xl sm:text-2xl font-semibold">Stress & Signals</h3>
+<p class="text-slate-600 dark:text-slate-300 font-body text-base sm:text-lg leading-relaxed">
+                            You learn to read what your dog is really communicating, especially in moments of fear, confusion, reactivity, or shutdown.
+                        </p>
+</div>
+<!-- Q -->
+<div class="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md text-center sm:text-left group">
+<div class="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary font-display text-2xl sm:text-3xl font-bold group-hover:bg-primary group-hover:text-white transition-colors duration-300 mx-auto sm:mx-0">Q</div>
+<h3 class="text-slate-900 dark:text-white font-display text-xl sm:text-2xl font-semibold">Quality of Match</h3>
+<p class="text-slate-600 dark:text-slate-300 font-body text-base sm:text-lg leading-relaxed">
+                            We focus on patience and understanding when choosing a dog you can sustain with quiet, consistent care, not just one you fall in love with at first sight.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: The ResQ Belief -->
+<section class="w-full py-24 px-4 flex justify-center items-center bg-background-dark/40 backdrop-blur-sm">
+<div class="max-w-4xl text-center">
+<span class="uppercase tracking-[0.2em] text-primary font-bold text-sm mb-6 block">The ResQ Belief</span>
+<blockquote class="text-3xl lg:text-5xl font-display italic text-slate-800 dark:text-white leading-tight">
+                    "ResQ is built on the belief that successful adoptions begin with preparation, not pressure, saving a life at both ends of the leash."
+                </blockquote>
+</div>
+</section>
+<!-- Section 4: Why Train the Human First? -->
+<section class="w-full max-w-[1100px] px-4 py-16 mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+<!-- Left Column: Image -->
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-xl bg-surface-highlight">
+<img alt="Scared dog with comforting hand under chin" class="absolute inset-0 w-full h-full object-cover" data-alt="Scared dog with comforting hand under chin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXVDsZEJfCK0Ob4UM6NqXdcLSvI8tmvtef2fU7hgw_bh-i2NAbD1OPNitWVpMMfpT7Q-RZzU79pS5OoJbdz2rOX-18KeUOltuZ0Me8iQePl5Ev8Xd6hLv2do2xRsv-EFcB92OZeLIez_EJTJS41NTbHgnaDBDw5Ct0h6Zp9mPTvGFSaReZ-7evQLEnD0SR1qt8e5QHKaII5kZoi-vO0XgmVrNTT7qoaV_g3sR1v1tsoMLq-TviBxdhwRh_Twc7LDnH421o1JqUOw"/>
+<div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#0b1024]/90 to-transparent"></div>
+<h2 class="absolute bottom-8 left-8 text-white font-display font-bold text-3xl lg:text-4xl pr-8">
+                        Why Train the Human First?
+                    </h2>
+</div>
+<!-- Right Column: Content -->
+<div class="flex flex-col gap-8">
+<div class="space-y-6">
+<p class="text-slate-700 dark:text-slate-300 text-lg leading-relaxed font-body">
+                            Rescue dogs don’t arrive as blank slates. They come with histories we may never fully know—experiences that shape how they see the world, how they react to touch, sound, and movement, and how quickly they trust. Even a loving home can feel overwhelming when everything is new, unfamiliar, and unpredictable.
+                        </p>
+<p class="text-slate-700 dark:text-slate-300 text-lg leading-relaxed font-body">
+                            When a human is anxious, impatient, or unsure, that energy becomes the dog’s environment. The dog isn’t being stubborn or ungrateful—they’re trying to survive in a world they don’t yet understand. Without preparation, pressure replaces patience, and the bond people dreamed of begins to feel strained before it ever has a chance to grow.
+                        </p>
+<p class="text-slate-700 dark:text-slate-300 text-lg leading-relaxed font-body">
+                            So we start with the human. We slow things down, replace pressure with preparation, and create a calm, predictable presence the dog can rely on. Because before a dog can learn commands, they need to feel safe—and safety doesn’t come from obedience. It comes from a human who understands the language of patience, silence, and trust.
+                        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+<div class="flex flex-col gap-4">
+<div class="relative aspect-square rounded-lg overflow-hidden">
+<img alt="Mindful patience: quiet connection" class="absolute inset-0 w-full h-full object-cover" data-alt="Mindful patience: quiet connection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA05YzjMGq4TUuN_7TO5Lt5sC4BgonJU4LC0CDAfjBIHt2J-VSN7Lh6kwC78I5nBZDGFUtfelNvzAwZ7B_F7ayY1BpJNJd0OzE3iYUSQFzdWrycFpItL3YMTX7WN8sHjjrWjMgu8O5fNHp3s2RIkvwR8QDzaCjaZL-BVcqjWrfzcSfBCC72x8ECiXVjTmsZBzmXvX8TbtSI0CWVi4zstgasr6uyFaHsE-zvhU15dmQgvmlUKsmsSJFsyLCk2YZbDcVAbzH7jrgGtA"/>
+</div>
+<div class="space-y-2">
+<h4 class="text-slate-900 dark:text-white font-display text-xl font-semibold">Mindful Patience</h4>
+<p class="text-slate-600 dark:text-slate-400 font-body leading-relaxed">
+                            Learning to wait for the dog to invite interaction, rather than forcing connection before trust is ready.
+                        </p>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="relative aspect-square rounded-lg overflow-hidden">
+<img alt="Deep bonding: moments of warmth and care" class="absolute inset-0 w-full h-full object-cover" data-alt="Deep bonding: moments of warmth and care" src="images/Bonding moments of warmth and care.png"/>
+</div>
+<div class="space-y-2">
+<h4 class="text-slate-900 dark:text-white font-display text-xl font-semibold">Deep Bonding</h4>
+<p class="text-slate-600 dark:text-slate-400 font-body leading-relaxed">
+                            A relationship built on safety and understanding—where trust grows first, and training follows naturally.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Who This Is For -->
+<section class="relative w-full py-24 px-4 overflow-hidden">
+<div class="absolute inset-0 z-0 bg-[#0f0f2d]/35"></div>
+<div class="absolute inset-0 z-0 bg-gradient-to-b from-[#101022]/70 via-transparent to-[#101022]/80"></div>
+<div class="relative z-10 max-w-[1100px] mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-white font-display text-4xl lg:text-5xl font-bold mb-4">Who This Is For</h2>
+<p class="text-slate-300 font-body text-lg lg:text-xl italic">Whether you’re new to rescue, returning to it, or opening your home as a foster, this course is for humans who want to do right by a dog, before the leash is ever clipped on.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white/5 rounded-[2.5rem] p-8 border border-white/10 shadow-xl hover:shadow-2xl hover:border-primary/40 transition-all duration-300 flex flex-col backdrop-blur-md">
+<h3 class="font-display text-2xl font-bold text-white mb-4">First-Time Rescue Guardians</h3>
+<p class="text-gray-300 leading-relaxed mb-6 flex-grow">
+                            You’re bringing a rescue dog into your life for the first time and want to begin with patience, preparation, and the right mindset.
+                        </p>
+<ul class="space-y-3 text-sm text-gray-200">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Understand the basics of rescue dog behavior</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Prepare your home for a calm transition</li>
+</ul>
+</div>
+<div class="bg-white/5 rounded-[2.5rem] p-8 border border-white/10 shadow-xl hover:shadow-2xl hover:border-primary/40 transition-all duration-300 flex flex-col backdrop-blur-md">
+<h3 class="font-display text-2xl font-bold text-white mb-4">Returning Guardians</h3>
+<p class="text-gray-300 leading-relaxed mb-6 flex-grow">
+                            You’ve had dogs before, but this new chapter calls for a calmer, more intentional approach, one built on trust, not just training.
+                        </p>
+<ul class="space-y-3 text-sm text-gray-200">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Let go of outdated training habits</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Adapt to a rescue dog’s unique personality</li>
+</ul>
+</div>
+<div class="bg-white/5 rounded-[2.5rem] p-8 border border-white/10 shadow-xl hover:shadow-2xl hover:border-primary/40 transition-all duration-300 flex flex-col backdrop-blur-md">
+<h3 class="font-display text-2xl font-bold text-white mb-4">Foster Family Guardians</h3>
+<p class="text-gray-300 leading-relaxed mb-6 flex-grow">
+                            You’re opening your home to a dog in transition and want to offer the stability, understanding, and structure they need to feel safe.
+                        </p>
+<ul class="space-y-3 text-sm text-gray-200">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Create a low-stress foster environment</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Support trust during short-term placements</li>
+</ul>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+<div class="bg-white/5 rounded-[2.5rem] p-8 border border-white/10 shadow-xl hover:shadow-2xl hover:border-primary/40 transition-all duration-300 flex flex-col backdrop-blur-md">
+<h3 class="font-display text-2xl font-bold text-white mb-4">Feeling Unprepared</h3>
+<p class="text-gray-300 leading-relaxed mb-6 flex-grow">
+                            You want to adopt, but you’re worried you might not be ready, or that you’ll choose a dog whose needs don’t match your life.
+                        </p>
+<ul class="space-y-3 text-sm text-gray-200">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Learn how to assess your readiness honestly</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Choose a dog you can support long term</li>
+</ul>
+</div>
+<div class="bg-white/5 rounded-[2.5rem] p-8 border border-white/10 shadow-xl hover:shadow-2xl hover:border-primary/40 transition-all duration-300 flex flex-col backdrop-blur-md">
+<h3 class="font-display text-2xl font-bold text-white mb-4">Overwhelmed by Behavior</h3>
+<p class="text-gray-300 leading-relaxed mb-6 flex-grow">
+                            You’re seeing fear, reactivity, or shutdown, and you’re not sure what your dog is trying to tell you.
+                        </p>
+<ul class="space-y-3 text-sm text-gray-200">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Understand what stress signals really mean</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Respond with calm, clear guidance</li>
+</ul>
+</div>
+<div class="bg-white/5 rounded-[2.5rem] p-8 border border-white/10 shadow-xl hover:shadow-2xl hover:border-primary/40 transition-all duration-300 flex flex-col backdrop-blur-md">
+<h3 class="font-display text-2xl font-bold text-white mb-4">Afraid of Getting It Wrong</h3>
+<p class="text-gray-300 leading-relaxed mb-6 flex-grow">
+                            You care deeply about dogs and don’t want to be the reason one ends up back in a shelter.
+                        </p>
+<ul class="space-y-3 text-sm text-gray-200">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Build a foundation of trust from day one</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>Create a bond that can withstand challenges</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-background-dark border-t border-[#243047] py-16 px-6 md:px-12" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1 space-y-6">
+<div class="flex items-center gap-3">
+<img src="images/ResQ-logo.png" alt="ResQ" class="h-20 w-auto"/>
+</div>
+<p class="text-gray-500 text-sm leading-relaxed">
+                        Compassionate guidance for rescue dogs and their humans. Training the heart before the habit.
+                    </p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-display">Explore</h4>
+<ul class="space-y-4 text-sm text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#top">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="#about">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#philosophy">The Approach</a></li>
+<li><a class="hover:text-primary transition-colors" href="#stories">Success Stories</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-display">Support</h4>
+<ul class="space-y-4 text-sm text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#faq">FAQ</a></li>
+<li><a class="hover:text-primary transition-colors" href="mailto:journeyintwilight@gmail.com">Contact Support</a></li>
+<li><a class="hover:text-primary transition-colors" href="#privacy-policy" data-modal="privacy">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#terms-of-service" data-modal="terms">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-display">Contact</h4>
+<ul class="space-y-4 text-sm text-gray-400">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm text-primary">mail</span>
+                            journeyintwilight@gmail.com
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+                            Portland, OR
+                        </li>
+<li class="flex gap-4 mt-6">
+<a class="w-10 h-10 rounded-full bg-twilight border border-[#243047] flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110" href="https://www.instagram.com" target="_blank" rel="noreferrer" title="Instagram">
+<span class="text-xs font-bold">IG</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-twilight border border-[#243047] flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110" href="https://facebook.com/profile.php?id=61587270763612" target="_blank" rel="noreferrer" title="Facebook">
+<span class="text-xs font-bold">FB</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-twilight border border-[#243047] flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110" href="https://www.twitter.com" target="_blank" rel="noreferrer" title="Twitter">
+<span class="text-xs font-bold">TW</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-[#243047] pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+<p>© 2023 Journey in Twilight / ResQ a Dog. All rights reserved.</p>
+<p>Designed with compassion.</p>
+</div>
+</div>
+</footer>
+
+<div class="fixed inset-0 z-50 hidden" id="privacy-policy" role="dialog" aria-modal="true" aria-hidden="true">
+<div class="absolute inset-0 bg-background-dark/80 backdrop-blur-sm" data-close-modal="true"></div>
+<div class="relative max-w-3xl mx-auto mt-20 bg-[#1a2130] border border-[#243047] rounded-[2.5rem] p-10 text-gray-300 shadow-2xl">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-white font-display text-2xl font-bold">Privacy Policy</h3>
+<button class="text-white" data-close-modal="true" aria-label="Close privacy policy">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-4 text-sm leading-relaxed">
+<p>We collect only the information you share with us to provide waitlist updates, resources, and program notifications.</p>
+<p>Your details are stored securely and never sold. You can unsubscribe at any time through the emails we send.</p>
+<p>For Journey in Twilight, contact journeyintwilight@gmail.com. For ResQ a Dog, contact resqadog1@gmail.com.</p>
+</div>
+<div class="mt-8 flex justify-end">
+<button class="h-12 px-6 rounded-full bg-primary text-white font-bold hover:bg-primary-dark transition-colors" data-close-modal="true">Close</button>
+</div>
+</div>
+</div>
+
+<div class="fixed inset-0 z-50 hidden" id="terms-of-service" role="dialog" aria-modal="true" aria-hidden="true">
+<div class="absolute inset-0 bg-background-dark/80 backdrop-blur-sm" data-close-modal="true"></div>
+<div class="relative max-w-3xl mx-auto mt-20 bg-[#1a2130] border border-[#243047] rounded-[2.5rem] p-10 text-gray-300 shadow-2xl">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-white font-display text-2xl font-bold">Terms of Service</h3>
+<button class="text-white" data-close-modal="true" aria-label="Close terms of service">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-4 text-sm leading-relaxed">
+<p>Journey in Twilight and ResQ a Dog provide educational content and guidance intended to support reflection and rescue dog guardianship.</p>
+<p>Participation in the waitlist does not guarantee enrollment. We contact applicants as spots open.</p>
+<p>By joining, you agree to receive program updates and resources, with the option to opt out at any time.</p>
+</div>
+<div class="mt-8 flex justify-end">
+<button class="h-12 px-6 rounded-full bg-primary text-white font-bold hover:bg-primary-dark transition-colors" data-close-modal="true">Close</button>
+</div>
+</div>
+</div>
+
+<script>
+const scrollToTarget = (target) => {
+const element = document.querySelector(target);
+if (!element) return;
+element.scrollIntoView({ behavior: "smooth", block: "start" });
+};
+
+const handleAnchorClick = (event) => {
+const anchor = event.currentTarget;
+const href = anchor.getAttribute("href");
+if (!href || !href.startsWith("#")) return;
+const target = href === "#top" ? "body" : href;
+const element = document.querySelector(target);
+if (!element) return;
+event.preventDefault();
+scrollToTarget(target === "body" ? "body" : target);
+};
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+anchor.addEventListener("click", handleAnchorClick);
+});
+
+const scrollTrigger = document.querySelector("[data-scroll]");
+if (scrollTrigger) {
+scrollTrigger.addEventListener("click", () => {
+const target = scrollTrigger.getAttribute("data-scroll");
+if (target) scrollToTarget(target);
+});
+}
+
+const menuButton = document.querySelector("header button[aria-controls='mobile-menu']");
+const mobileMenu = document.getElementById("mobile-menu");
+const closeMenuButtons = mobileMenu ? mobileMenu.querySelectorAll("[data-close-menu]") : [];
+
+const toggleMenu = (open) => {
+if (!mobileMenu || !menuButton) return;
+const isOpen = open ?? mobileMenu.classList.contains("hidden");
+mobileMenu.classList.toggle("hidden", !isOpen);
+menuButton.setAttribute("aria-expanded", String(isOpen));
+document.body.classList.toggle("overflow-hidden", isOpen);
+};
+
+if (menuButton && mobileMenu) {
+menuButton.addEventListener("click", () => toggleMenu());
+closeMenuButtons.forEach((button) => button.addEventListener("click", () => toggleMenu(false)));
+mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => toggleMenu(false)));
+document.addEventListener("keydown", (event) => {
+if (event.key === "Escape" && !mobileMenu.classList.contains("hidden")) toggleMenu(false);
+});
+}
+
+const header = document.querySelector("header");
+const headerOpaqueClasses = header ? (header.dataset.opaqueClasses || "").split(" ").filter(Boolean) : [];
+const setHeaderState = () => {
+if (!header) return;
+const scrolled = window.scrollY > 0;
+if (scrolled) {
+headerOpaqueClasses.forEach((cls) => header.classList.add(cls));
+header.classList.remove("bg-transparent", "border-transparent");
+const opaqueStyle = header.dataset.opaqueStyle;
+if (opaqueStyle) {
+header.setAttribute("style", opaqueStyle);
+} else {
+header.removeAttribute("style");
+}
+} else {
+headerOpaqueClasses.forEach((cls) => header.classList.remove(cls));
+header.classList.add("bg-transparent", "border-transparent");
+header.setAttribute("style", "background-image: none; background-color: transparent;");
+}
+};
+
+setHeaderState();
+window.addEventListener("scroll", setHeaderState);
+
+const modalLinks = document.querySelectorAll("[data-modal]");
+const modalOverlays = document.querySelectorAll("[data-close-modal]");
+
+const setModalOpen = (modal, open) => {
+if (!modal) return;
+modal.classList.toggle("hidden", !open);
+modal.setAttribute("aria-hidden", String(!open));
+document.body.classList.toggle("overflow-hidden", open);
+};
+
+modalLinks.forEach((link) => {
+link.addEventListener("click", (event) => {
+const modalId = link.getAttribute("href");
+const modal = modalId ? document.querySelector(modalId) : null;
+if (!modal) return;
+event.preventDefault();
+setModalOpen(modal, true);
+});
+});
+
+modalOverlays.forEach((overlay) => {
+overlay.addEventListener("click", (event) => {
+const modal = event.currentTarget.closest("[role='dialog']");
+setModalOpen(modal, false);
+});
+});
+
+document.addEventListener("keydown", (event) => {
+if (event.key !== "Escape") return;
+document.querySelectorAll("[role='dialog']").forEach((modal) => {
+if (!modal.classList.contains("hidden")) setModalOpen(modal, false);
+});
+});
+</script>
+</main>
+</div>
+</body></html>

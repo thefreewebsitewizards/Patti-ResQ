@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ResQ a Dog - Join the Waitlist</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#306ee8",
+                        "primary-dark": "#2a5fcc",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                        "twilight": "#141a33",
+                        "glass": "rgba(17, 22, 33, 0.7)",
+                        "glass-border": "rgba(255, 255, 255, 0.1)",
+                    },
+                    fontFamily: {
+                        "display": ["Georgia", "serif"],
+                        "body": ["Lora", "serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom font classes to strictly follow the prompt while using Tailwind utilities */
+        .font-georgia { font-family: 'Georgia', serif; }
+        .font-lora { font-family: 'Lora', serif; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col font-body antialiased selection:bg-primary selection:text-white">
+<header class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent border-transparent" data-opaque-classes="bg-background-dark/90">
+<div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<img src="images/ResQ-logo.png" alt="ResQ" class="h-16 w-24"/>
+<div class="text-[11px] md:text-xs text-white/80 tracking-wide">A Journey in Twilight™ Course</div>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="index.html">Home</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="theUnseenStruggle.html">Unseen Struggle</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="about.html">About</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="faq.html">FAQ</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="opt-in.html">Opt-In</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="index.html#reality">The Reality</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="index.html#philosophy">The Approach</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="index.html#contact">Contact</a>
+</nav>
+<button class="md:hidden text-white" aria-expanded="false" aria-controls="mobile-menu">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<div class="md:hidden fixed inset-0 z-[60] hidden" id="mobile-menu">
+<div class="absolute inset-0 bg-background-dark/80 backdrop-blur-sm" data-close-menu="true"></div>
+<div class="relative bg-background-dark/95 backdrop-blur-md border-b border-[#243047] shadow-2xl">
+<div class="max-w-7xl mx-auto px-6 pb-8 pt-2 flex flex-col gap-8">
+<div class="flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<img src="images/ResQ-logo.png" alt="ResQ" class="h-16 w-24"/>
+<div class="text-[11px] md:text-xs text-white/80 tracking-wide">A Journey in Twilight™ Course</div>
+</div>
+<button class="text-white" aria-label="Close menu" data-close-menu="true">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-6 text-lg">
+<a class="text-gray-300 hover:text-white transition-colors" href="index.html">Home</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="theUnseenStruggle.html">Unseen Struggle</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="about.html">About</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="faq.html">FAQ</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="opt-in.html">Opt-In</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="index.html#reality">The Reality</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="index.html#philosophy">The Approach</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="index.html#contact">Contact</a>
+</nav>
+</div>
+</div>
+</div>
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden pt-24">
+<!-- Background Image with Overlay -->
+<div class="fixed inset-0 z-0">
+<div class="absolute inset-0 bg-background-dark/60 z-10"></div> <!-- Subtle Dark Overlay -->
+<div class="h-full w-full bg-cover bg-center bg-no-repeat bg-fixed" data-alt="Start your journey of compassion" style='background-image: url("images/Start-your-journey-of-compassion.png");'>
+</div>
+</div>
+<!-- Main Content Container -->
+<div class="relative z-20 flex flex-1 flex-col items-center justify-center px-4 py-12 md:px-8">
+<div class="layout-content-container flex max-w-[800px] flex-col items-center text-center">
+<!-- Header Section -->
+<div class="mb-10 flex flex-col items-center gap-6">
+<!-- Logo / Brand Icon (Optional based on prompt, but good for context) -->
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 backdrop-blur-sm">
+<span class="material-symbols-outlined text-primary text-3xl">pets</span>
+</div>
+<h1 class="font-georgia text-4xl font-bold leading-tight tracking-tight text-white md:text-6xl lg:text-[64px]">
+                        Start Your Journey of <span class="text-primary italic">Compassion</span>
+</h1>
+<h2 class="font-lora text-lg font-normal italic text-slate-200 md:text-xl lg:text-2xl">
+                        Enrollment opens in limited cohorts to preserve a calm, supportive learning environment.
+                    </h2>
+</div>
+<!-- Main Body Text -->
+<div class="mb-12 max-w-2xl space-y-6">
+<h3 class="font-display text-2xl font-bold text-white md:text-3xl">
+                        Decompression Guide &amp; Building a Bond
+                    </h3>
+<p class="font-lora text-lg leading-relaxed text-slate-200 md:text-xl">
+                        Join the waitlist to receive your free ResQ Decompression Guide and be the first to know when the next enrollment opens. This is the first step toward a calmer home, a clearer mindset, and a stronger bond between you and your future rescue dog. A gentle first step to help your rescue dog settle into a calm, safe, and trusting home.
+                    </p>
+</div>
+<!-- Benefit List (Strict: No bullets, icons, dashes) -->
+<div class="mb-14 flex flex-col space-y-6 text-center">
+<p class="font-lora text-lg font-medium leading-loose text-white md:text-xl">
+                        Early access to enrollment
+                    </p>
+<p class="font-lora text-lg font-medium leading-loose text-white md:text-xl">
+                        Free ResQ Decompression Guide
+                    </p>
+<p class="font-lora text-lg font-medium leading-loose text-white md:text-xl">
+                        Exclusive community access
+                    </p>
+<p class="font-lora text-lg font-medium leading-loose text-white md:text-xl">
+                        Expert tips on bonding
+                    </p>
+</div>
+<!-- Opt-In Form (Glassmorphism) -->
+<div class="w-full max-w-md rounded-2xl border border-glass-border bg-glass p-8 shadow-2xl backdrop-blur-md md:p-10">
+<form class="flex flex-col gap-5" id="waitlist-form">
+<div class="flex flex-col gap-1 text-left">
+<label class="sr-only" for="name">Full Name</label>
+<input class="h-12 w-full rounded-lg border border-slate-500/30 bg-background-dark/50 px-4 font-lora text-white placeholder-slate-400 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" id="name" placeholder="Full Name" type="text"/>
+</div>
+<div class="flex flex-col gap-1 text-left">
+<label class="sr-only" for="email">Email Address</label>
+<input class="h-12 w-full rounded-lg border border-slate-500/30 bg-background-dark/50 px-4 font-lora text-white placeholder-slate-400 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" id="email" placeholder="Email Address" type="email"/>
+</div>
+<div class="flex flex-col gap-1 text-left">
+<label class="sr-only" for="phone">Phone Number</label>
+<input class="h-12 w-full rounded-lg border border-slate-500/30 bg-background-dark/50 px-4 font-lora text-white placeholder-slate-400 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" id="phone" placeholder="Phone Number" type="tel"/>
+</div>
+<button class="mt-2 flex h-14 w-full items-center justify-center rounded-lg bg-primary text-lg font-bold text-white transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-dark" type="button">
+                            Join the Waitlist   →
+                        </button>
+<p class="text-center font-lora text-xs text-slate-400">
+                            We respect your privacy. Unsubscribe at any time.
+                        </p>
+</form>
+</div>
+</div>
+</div>
+<footer class="bg-background-dark border-t border-[#243047] py-16 px-6 md:px-12 relative z-20" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1 space-y-6">
+<div class="flex items-center gap-3">
+<img src="images/ResQ-logo.png" alt="ResQ" class="h-20 w-auto"/>
+</div>
+<p class="text-gray-500 text-sm leading-relaxed">
+                        Compassionate guidance for rescue dogs and their humans. Training the heart before the habit.
+                    </p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-display">Explore</h4>
+<ul class="space-y-4 text-sm text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#top">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="#about">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#philosophy">The Approach</a></li>
+<li><a class="hover:text-primary transition-colors" href="#stories">Success Stories</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-display">Support</h4>
+<ul class="space-y-4 text-sm text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#faq">FAQ</a></li>
+<li><a class="hover:text-primary transition-colors" href="mailto:journeyintwilight@gmail.com">Contact Support</a></li>
+<li><a class="hover:text-primary transition-colors" href="#privacy-policy" data-modal="privacy">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#terms-of-service" data-modal="terms">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-display">Contact</h4>
+<ul class="space-y-4 text-sm text-gray-400">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm text-primary">mail</span>
+                            journeyintwilight@gmail.com
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+                            Portland, OR
+                        </li>
+<li class="flex gap-4 mt-6">
+<a class="w-10 h-10 rounded-full bg-twilight border border-[#243047] flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110" href="https://www.instagram.com" target="_blank" rel="noreferrer" title="Instagram">
+<span class="text-xs font-bold">IG</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-twilight border border-[#243047] flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110" href="https://facebook.com/profile.php?id=61587270763612" target="_blank" rel="noreferrer" title="Facebook">
+<span class="text-xs font-bold">FB</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-twilight border border-[#243047] flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110" href="https://www.twitter.com" target="_blank" rel="noreferrer" title="Twitter">
+<span class="text-xs font-bold">TW</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-[#243047] pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+<p>© 2023 Journey in Twilight / ResQ a Dog. All rights reserved.</p>
+<p>Designed with compassion.</p>
+</div>
+</div>
+</footer>
+</div>
+<div class="fixed inset-0 z-50 hidden" id="privacy-policy" role="dialog" aria-modal="true" aria-hidden="true">
+<div class="absolute inset-0 bg-background-dark/80 backdrop-blur-sm" data-close-modal="true"></div>
+<div class="relative max-w-3xl mx-auto mt-20 bg-[#1a2130] border border-[#243047] rounded-[2.5rem] p-10 text-gray-300 shadow-2xl">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-white font-display text-2xl font-bold">Privacy Policy</h3>
+<button class="text-white" data-close-modal="true" aria-label="Close privacy policy">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-4 text-sm leading-relaxed">
+<p>We collect only the information you share with us to provide waitlist updates, resources, and program notifications.</p>
+<p>Your details are stored securely and never sold. You can unsubscribe at any time through the emails we send.</p>
+<p>For Journey in Twilight, contact journeyintwilight@gmail.com. For ResQ a Dog, contact resqadog1@gmail.com.</p>
+</div>
+<div class="mt-8 flex justify-end">
+<button class="h-12 px-6 rounded-full bg-primary text-white font-bold hover:bg-primary-dark transition-colors" data-close-modal="true">Close</button>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden" id="terms-of-service" role="dialog" aria-modal="true" aria-hidden="true">
+<div class="absolute inset-0 bg-background-dark/80 backdrop-blur-sm" data-close-modal="true"></div>
+<div class="relative max-w-3xl mx-auto mt-20 bg-[#1a2130] border border-[#243047] rounded-[2.5rem] p-10 text-gray-300 shadow-2xl">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-white font-display text-2xl font-bold">Terms of Service</h3>
+<button class="text-white" data-close-modal="true" aria-label="Close terms of service">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-4 text-sm leading-relaxed">
+<p>Journey in Twilight and ResQ a Dog provide educational content and guidance intended to support reflection and rescue dog guardianship.</p>
+<p>Participation in the waitlist does not guarantee enrollment. We contact applicants as spots open.</p>
+<p>By joining, you agree to receive program updates and resources, with the option to opt out at any time.</p>
+</div>
+<div class="mt-8 flex justify-end">
+<button class="h-12 px-6 rounded-full bg-primary text-white font-bold hover:bg-primary-dark transition-colors" data-close-modal="true">Close</button>
+</div>
+</div>
+</div>
+<script>
+const scrollToTarget = (target) => {
+const element = document.querySelector(target);
+if (!element) return;
+element.scrollIntoView({ behavior: "smooth", block: "start" });
+};
+
+const handleAnchorClick = (event) => {
+const anchor = event.currentTarget;
+const href = anchor.getAttribute("href");
+if (!href || !href.startsWith("#")) return;
+const target = href === "#top" ? "body" : href;
+const element = document.querySelector(target);
+if (!element) return;
+event.preventDefault();
+scrollToTarget(target === "body" ? "body" : target);
+};
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+anchor.addEventListener("click", handleAnchorClick);
+});
+
+const scrollTrigger = document.querySelector("[data-scroll]");
+if (scrollTrigger) {
+scrollTrigger.addEventListener("click", () => {
+const target = scrollTrigger.getAttribute("data-scroll");
+if (target) scrollToTarget(target);
+});
+}
+
+const scrollToHashOnLoad = () => {
+const hash = window.location.hash;
+if (!hash) return;
+const target = hash === "#top" ? "body" : hash;
+const element = document.querySelector(target);
+if (!element) return;
+requestAnimationFrame(() => scrollToTarget(target === "body" ? "body" : target));
+};
+
+window.addEventListener("load", scrollToHashOnLoad);
+
+const menuButton = document.querySelector("header button[aria-controls='mobile-menu']");
+const mobileMenu = document.getElementById("mobile-menu");
+const closeMenuButtons = mobileMenu ? mobileMenu.querySelectorAll("[data-close-menu]") : [];
+
+const toggleMenu = (open) => {
+if (!mobileMenu || !menuButton) return;
+const isOpen = open ?? mobileMenu.classList.contains("hidden");
+mobileMenu.classList.toggle("hidden", !isOpen);
+menuButton.setAttribute("aria-expanded", String(isOpen));
+document.body.classList.toggle("overflow-hidden", isOpen);
+};
+
+if (menuButton && mobileMenu) {
+menuButton.addEventListener("click", () => toggleMenu());
+closeMenuButtons.forEach((button) => button.addEventListener("click", () => toggleMenu(false)));
+mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => toggleMenu(false)));
+document.addEventListener("keydown", (event) => {
+if (event.key === "Escape" && !mobileMenu.classList.contains("hidden")) toggleMenu(false);
+});
+}
+
+const header = document.querySelector("header");
+const headerOpaqueClasses = header ? (header.dataset.opaqueClasses || "").split(" ").filter(Boolean) : [];
+const setHeaderState = () => {
+if (!header) return;
+const scrolled = window.scrollY > 0;
+if (scrolled) {
+headerOpaqueClasses.forEach((cls) => header.classList.add(cls));
+header.classList.remove("bg-transparent", "border-transparent");
+const opaqueStyle = header.dataset.opaqueStyle;
+if (opaqueStyle) {
+header.setAttribute("style", opaqueStyle);
+} else {
+header.removeAttribute("style");
+}
+} else {
+headerOpaqueClasses.forEach((cls) => header.classList.remove(cls));
+header.classList.add("bg-transparent", "border-transparent");
+header.setAttribute("style", "background-image: none; background-color: transparent;");
+}
+};
+
+setHeaderState();
+window.addEventListener("scroll", setHeaderState);
+
+const modalLinks = document.querySelectorAll("[data-modal]");
+const modalOverlays = document.querySelectorAll("[data-close-modal]");
+
+const setModalOpen = (modal, open) => {
+if (!modal) return;
+modal.classList.toggle("hidden", !open);
+modal.setAttribute("aria-hidden", String(!open));
+document.body.classList.toggle("overflow-hidden", open);
+};
+
+modalLinks.forEach((link) => {
+link.addEventListener("click", (event) => {
+const modalId = link.getAttribute("href");
+const modal = modalId ? document.querySelector(modalId) : null;
+if (!modal) return;
+event.preventDefault();
+setModalOpen(modal, true);
+});
+});
+
+modalOverlays.forEach((overlay) => {
+overlay.addEventListener("click", (event) => {
+const modal = event.currentTarget.closest("[role='dialog']");
+setModalOpen(modal, false);
+});
+});
+
+document.addEventListener("keydown", (event) => {
+if (event.key !== "Escape") return;
+document.querySelectorAll("[role='dialog']").forEach((modal) => {
+if (!modal.classList.contains("hidden")) setModalOpen(modal, false);
+});
+});
+</script>
+</body></html>

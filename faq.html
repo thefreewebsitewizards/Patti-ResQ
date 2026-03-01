@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ResQ a Dog - FAQ</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Georgia&amp;family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#5b5bd6",
+              "primary-dark": "#4a49b7",
+              "background-light": "#f6f4f9",
+              "background-dark": "#0b1024",
+              "surface-dark": "#161b33",
+              "surface-hover": "#1d2240",
+              "text-secondary": "#b4abd6",
+              "twilight": "#141a33",
+              "twilight-deep": "#0d1228",
+              "warm-cream": "#efe9f4",
+            },
+            fontFamily: {
+              "display": ["Georgia", "serif"],
+              "body": ["Lora", "serif"],
+              "georgia": ["Georgia", "serif"],
+              "lora": ["Lora", "serif"],
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem", 
+              "lg": "0.5rem", 
+              "xl": "0.75rem", 
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>details > summary {
+    list-style: none
+    }
+details > summary::-webkit-details-marker {
+    display: none
+    }
+.aurora-bg {
+    background-image: linear-gradient(to bottom, rgba(11, 16, 36, 0.6), rgba(11, 16, 36, 0.82)), url('images/Ethereal-aurora-with-twinkling-stars.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+    }</style>
+</head>
+<body class="aurora-bg min-h-screen text-slate-100 font-body">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent border-transparent" data-opaque-classes="bg-background-dark/90">
+<div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<img src="images/ResQ-logo.png" alt="ResQ" class="h-16 w-24"/>
+<div class="text-[11px] md:text-xs text-white/80 tracking-wide">A Journey in Twilight™ Course</div>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="index.html">Home</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="theUnseenStruggle.html">Unseen Struggle</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="about.html">About</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="faq.html">FAQ</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="opt-in.html">Opt-In</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="index.html#reality">The Reality</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="index.html#philosophy">The Approach</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors tracking-wide" href="index.html#contact">Contact</a>
+</nav>
+<button class="md:hidden text-white" aria-expanded="false" aria-controls="mobile-menu">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<div class="md:hidden fixed inset-0 z-[60] hidden" id="mobile-menu">
+<div class="absolute inset-0 bg-background-dark/80 backdrop-blur-sm" data-close-menu="true"></div>
+<div class="relative bg-background-dark/95 backdrop-blur-md border-b border-[#243047] shadow-2xl">
+<div class="max-w-7xl mx-auto px-6 pb-8 pt-2 flex flex-col gap-8">
+<div class="flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<img src="images/ResQ-logo.png" alt="ResQ" class="h-16 w-24"/>
+<div class="text-[11px] md:text-xs text-white/80 tracking-wide">A Journey in Twilight™ Course</div>
+</div>
+<button class="text-white" aria-label="Close menu" data-close-menu="true">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-6 text-lg">
+<a class="text-gray-300 hover:text-white transition-colors" href="index.html">Home</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="theUnseenStruggle.html">Unseen Struggle</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="about.html">About</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="faq.html">FAQ</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="opt-in.html">Opt-In</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="index.html#reality">The Reality</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="index.html#philosophy">The Approach</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="index.html#contact">Contact</a>
+</nav>
+</div>
+</div>
+</div>
+<!-- Main Content -->
+<main class="layout-container flex h-full grow flex-col py-10 md:py-16 pt-24 md:mt-20">
+<div class="px-4 md:px-40 flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[800px] flex-1 w-full">
+<!-- Page Title -->
+<div class="flex flex-col gap-4 p-4 text-center mb-8">
+<h1 class="text-white text-4xl md:text-5xl font-georgia font-bold leading-tight tracking-[-0.02em] drop-shadow-md">
+                            Frequently Asked Questions
+                        </h1>
+<p class="text-text-secondary text-lg md:text-xl font-lora italic font-normal leading-relaxed">
+                            Simple answers to the most common questions about the ResQ journey.
+                        </p>
+</div>
+<!-- FAQ Accordion List -->
+<div class="flex flex-col gap-4 p-4">
+<!-- Question 1 -->
+<details class="group flex flex-col rounded-xl bg-surface-dark border border-white/5 hover:border-white/10 transition-all duration-300 overflow-hidden" open="">
+<summary class="flex cursor-pointer items-center justify-between gap-6 p-6 select-none bg-surface-dark group-hover:bg-surface-hover transition-colors">
+<h3 class="text-white text-lg font-georgia font-medium leading-snug">How is this different from obedience training?</h3>
+<div class="text-primary transition-transform duration-300 group-open:rotate-180 flex items-center justify-center">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<div class="px-6 pb-6 pt-0 bg-surface-dark">
+<p class="text-text-secondary text-base font-lora leading-relaxed border-t border-white/5 pt-4">
+                                    ResQ is not an obedience program. We don’t start with commands, corrections, or performance. We start with the human. Most adoption struggles happen because the dog is overwhelmed, not disobedient. ResQ focuses on preparation, emotional regulation, and understanding canine communication. When the human becomes calm, consistent, and clear, many behavioral issues resolve naturally. Obedience can come later. Trust must come first.
+                                </p>
+</div>
+</details>
+<!-- Question 2 -->
+<details class="group flex flex-col rounded-xl bg-surface-dark border border-white/5 hover:border-white/10 transition-all duration-300 overflow-hidden">
+<summary class="flex cursor-pointer items-center justify-between gap-6 p-6 select-none bg-surface-dark group-hover:bg-surface-hover transition-colors">
+<h3 class="text-white text-lg font-georgia font-medium leading-snug">Do I need prior experience with dogs?</h3>
+<div class="text-primary transition-transform duration-300 group-open:rotate-180 flex items-center justify-center">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<div class="px-6 pb-6 pt-0 bg-surface-dark">
+<p class="text-text-secondary text-base font-lora leading-relaxed border-t border-white/5 pt-4">
+                                    No experience is required. In fact, many first-time adopters benefit the most from this approach. ResQ is designed to guide you step by step, helping you understand what rescue dogs need, how to read their signals, and how to prepare your home and energy before they ever arrive. The course meets you where you are, whether you’re brand new or simply ready to do things differently.
+                                </p>
+</div>
+</details>
+<!-- Question 3 -->
+<details class="group flex flex-col rounded-xl bg-surface-dark border border-white/5 hover:border-white/10 transition-all duration-300 overflow-hidden">
+<summary class="flex cursor-pointer items-center justify-between gap-6 p-6 select-none bg-surface-dark group-hover:bg-surface-hover transition-colors">
+<h3 class="text-white text-lg font-georgia font-medium leading-snug">Is this course for adopters, fosters, or both?</h3>
+<div class="text-primary transition-transform duration-300 group-open:rotate-180 flex items-center justify-center">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<div class="px-6 pb-6 pt-0 bg-surface-dark">
+<p class="text-text-secondary text-base font-lora leading-relaxed border-t border-white/5 pt-4">
+                                    Both. ResQ is designed for: "First-time adopter guardians", "Returning dog guardians", "Foster family guardians". Anyone preparing to welcome a rescue dog into their home. The principles of calm leadership, patience, and understanding apply to any human caring for a dog in transition.
+                                </p>
+</div>
+</details>
+<!-- Question 4 -->
+<details class="group flex flex-col rounded-xl bg-surface-dark border border-white/5 hover:border-white/10 transition-all duration-300 overflow-hidden">
+<summary class="flex cursor-pointer items-center justify-between gap-6 p-6 select-none bg-surface-dark group-hover:bg-surface-hover transition-colors">
+<h3 class="text-white text-lg font-georgia font-medium leading-snug">When should I take this course, before or after adopting?</h3>
+<div class="text-primary transition-transform duration-300 group-open:rotate-180 flex items-center justify-center">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<div class="px-6 pb-6 pt-0 bg-surface-dark">
+<p class="text-text-secondary text-base font-lora leading-relaxed border-t border-white/5 pt-4">
+                                    Ideally, before. ResQ was designed to prepare the human first, so the dog arrives into a calm, structured, and understanding environment. This dramatically increases the chances of a successful adoption. However, if you’ve already adopted and things feel stressful or confusing, this course can help you reset the relationship and rebuild trust.
+                                </p>
+</div>
+</details>
+<!-- Question 5 -->
+<details class="group flex flex-col rounded-xl bg-surface-dark border border-white/5 hover:border-white/10 transition-all duration-300 overflow-hidden">
+<summary class="flex cursor-pointer items-center justify-between gap-6 p-6 select-none bg-surface-dark group-hover:bg-surface-hover transition-colors">
+<h3 class="text-white text-lg font-georgia font-medium leading-snug">How long is the course?</h3>
+<div class="text-primary transition-transform duration-300 group-open:rotate-180 flex items-center justify-center">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<div class="px-6 pb-6 pt-0 bg-surface-dark">
+<p class="text-text-secondary text-base font-lora leading-relaxed border-t border-white/5 pt-4">
+                                    The ResQ course is a four-session digital program that you can move through at your own pace. You’ll also have access to weekly live Zoom Q&A sessions for four weeks, where you can ask questions, share experiences, and receive guidance in real time. This structure allows you to learn the material on your schedule while still receiving personal support.
+                                </p>
+</div>
+</details>
+<!-- Question 6 -->
+<details class="group flex flex-col rounded-xl bg-surface-dark border border-white/5 hover:border-white/10 transition-all duration-300 overflow-hidden">
+<summary class="flex cursor-pointer items-center justify-between gap-6 p-6 select-none bg-surface-dark group-hover:bg-surface-hover transition-colors">
+<h3 class="text-white text-lg font-georgia font-medium leading-snug"> Is the program remote or in person?</h3>
+<div class="text-primary transition-transform duration-300 group-open:rotate-180 flex items-center justify-center">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<div class="px-6 pb-6 pt-0 bg-surface-dark">
+<p class="text-text-secondary text-base font-lora leading-relaxed border-t border-white/5 pt-4">
+                                    The program is fully remote. All course sessions are delivered online, and the live Q&A calls take place via Zoom. This allows you to participate from anywhere and learn in the environment where your dog will actually live—your home.
+                                </p>
+</div>
+</details>
+<!-- Question 7 -->
+<details class="group flex flex-col rounded-xl bg-surface-dark border border-white/5 hover:border-white/10 transition-all duration-300 overflow-hidden">
+<summary class="flex cursor-pointer items-center justify-between gap-6 p-6 select-none bg-surface-dark group-hover:bg-surface-hover transition-colors">
+<h3 class="text-white text-lg font-georgia font-medium leading-snug">What if I’ve already adopted and things are difficult?</h3>
+<div class="text-primary transition-transform duration-300 group-open:rotate-180 flex items-center justify-center">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<div class="px-6 pb-6 pt-0 bg-surface-dark">
+<p class="text-text-secondary text-base font-lora leading-relaxed border-t border-white/5 pt-4">
+                                    You’re not alone. This is one of the most common situations people face. Many adopters bring a dog home with love and good intentions, only to encounter fear, reactivity, shutdown, or confusion. This doesn’t mean you chose the wrong dog or that you’ve failed. It simply means the dog is overwhelmed and needs time, structure, and understanding. ResQ helps you slow things down, reset expectations, and begin building trust in a calm, consistent way. Many relationships transform when the human changes first.
+                                </p>
+</div>
+</details>
+<!-- Question 8 -->
+<details class="group flex flex-col rounded-xl bg-surface-dark border border-white/5 hover:border-white/10 transition-all duration-300 overflow-hidden">
+<summary class="flex cursor-pointer items-center justify-between gap-6 p-6 select-none bg-surface-dark group-hover:bg-surface-hover transition-colors">
+<h3 class="text-white text-lg font-georgia font-medium leading-snug">Will I get support after the course?</h3>
+<div class="text-primary transition-transform duration-300 group-open:rotate-180 flex items-center justify-center">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<div class="px-6 pb-6 pt-0 bg-surface-dark">
+<p class="text-text-secondary text-base font-lora leading-relaxed border-t border-white/5 pt-4">
+                                    Yes. In addition to the course sessions, you’ll have access to a private online community where you can connect with others on the same journey, ask questions, and share progress. You’ll also have the opportunity to join live Q&A sessions during the course period, and for those who want more individualized guidance, limited one-on-one support options may be available. The goal of ResQ is not just information, but ongoing support as you and your dog begin building trust together.
+                                </p>
+</div>
+</details>
+</div>
+<!-- Bottom CTA -->
+<div class="@container mt-12 mb-8">
+<div class="flex flex-col items-center justify-center gap-8 px-4 py-16 rounded-2xl bg-gradient-to-br from-[#1c1c2e] to-[#111122] border border-white/5 shadow-2xl relative overflow-hidden group">
+<!-- Subtle background accent -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
+<div class="flex flex-col gap-4 text-center z-10">
+<h2 class="text-white tracking-tight text-3xl font-georgia font-bold leading-tight md:text-4xl max-w-[720px]">
+                                    Still have a question?
+                                </h2>
+<p class="text-text-secondary text-lg font-lora font-normal leading-normal max-w-[600px] mx-auto">
+                                    We are here to help you on your journey to find your new best friend. Our team is ready to answer any specific inquiries you may have.
+                                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-4 w-full max-w-[480px] z-10">
+<a class="flex-1 min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary hover:bg-primary-dark transition-all duration-200 text-white text-base font-bold tracking-wide shadow-lg hover:shadow-primary/40 transform hover:-translate-y-0.5 flex" href="opt-in.html#waitlist-form">
+                                    Join the Waitlist
+                                </a>
+<a class="flex-1 min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-surface-hover hover:bg-[#2f2f4d] border border-white/10 transition-all duration-200 text-white text-base font-bold tracking-wide shadow-md hover:shadow-lg transform hover:-translate-y-0.5 flex" href="index.html#contact">
+                                    Contact Patti
+                                </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-dark border-t border-[#243047] py-16 px-6 md:px-12" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1 space-y-6">
+<div class="flex items-center gap-3">
+<img src="images/ResQ-logo.png" alt="ResQ" class="h-20 w-auto"/>
+</div>
+<p class="text-gray-500 text-sm leading-relaxed">
+                        Compassionate guidance for rescue dogs and their humans. Training the heart before the habit.
+                    </p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-display">Explore</h4>
+<ul class="space-y-4 text-sm text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#top">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="#about">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#philosophy">The Approach</a></li>
+<li><a class="hover:text-primary transition-colors" href="#stories">Success Stories</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-display">Support</h4>
+<ul class="space-y-4 text-sm text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#faq">FAQ</a></li>
+<li><a class="hover:text-primary transition-colors" href="mailto:journeyintwilight@gmail.com">Contact Support</a></li>
+<li><a class="hover:text-primary transition-colors" href="#privacy-policy" data-modal="privacy">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#terms-of-service" data-modal="terms">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 font-display">Contact</h4>
+<ul class="space-y-4 text-sm text-gray-400">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm text-primary">mail</span>
+                            journeyintwilight@gmail.com
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+                            Portland, OR
+                        </li>
+<li class="flex gap-4 mt-6">
+<a class="w-10 h-10 rounded-full bg-twilight border border-[#243047] flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110" href="https://www.instagram.com" target="_blank" rel="noreferrer" title="Instagram">
+<span class="text-xs font-bold">IG</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-twilight border border-[#243047] flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110" href="https://facebook.com/profile.php?id=61587270763612" target="_blank" rel="noreferrer" title="Facebook">
+<span class="text-xs font-bold">FB</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-twilight border border-[#243047] flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110" href="https://www.twitter.com" target="_blank" rel="noreferrer" title="Twitter">
+<span class="text-xs font-bold">TW</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-[#243047] pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+<p>© 2023 Journey in Twilight / ResQ a Dog. All rights reserved.</p>
+<p>Designed with compassion.</p>
+</div>
+</div>
+</footer>
+
+<div class="fixed inset-0 z-50 hidden" id="privacy-policy" role="dialog" aria-modal="true" aria-hidden="true">
+<div class="absolute inset-0 bg-background-dark/80 backdrop-blur-sm" data-close-modal="true"></div>
+<div class="relative max-w-3xl mx-auto mt-20 bg-[#1a2130] border border-[#243047] rounded-[2.5rem] p-10 text-gray-300 shadow-2xl">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-white font-display text-2xl font-bold">Privacy Policy</h3>
+<button class="text-white" data-close-modal="true" aria-label="Close privacy policy">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-4 text-sm leading-relaxed">
+<p>We collect only the information you share with us to provide waitlist updates, resources, and program notifications.</p>
+<p>Your details are stored securely and never sold. You can unsubscribe at any time through the emails we send.</p>
+<p>For Journey in Twilight, contact journeyintwilight@gmail.com. For ResQ a Dog, contact resqadog1@gmail.com.</p>
+</div>
+<div class="mt-8 flex justify-end">
+<button class="h-12 px-6 rounded-full bg-primary text-white font-bold hover:bg-primary-dark transition-colors" data-close-modal="true">Close</button>
+</div>
+</div>
+</div>
+
+<div class="fixed inset-0 z-50 hidden" id="terms-of-service" role="dialog" aria-modal="true" aria-hidden="true">
+<div class="absolute inset-0 bg-background-dark/80 backdrop-blur-sm" data-close-modal="true"></div>
+<div class="relative max-w-3xl mx-auto mt-20 bg-[#1a2130] border border-[#243047] rounded-[2.5rem] p-10 text-gray-300 shadow-2xl">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-white font-display text-2xl font-bold">Terms of Service</h3>
+<button class="text-white" data-close-modal="true" aria-label="Close terms of service">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-4 text-sm leading-relaxed">
+<p>Journey in Twilight and ResQ a Dog provide educational content and guidance intended to support reflection and rescue dog guardianship.</p>
+<p>Participation in the waitlist does not guarantee enrollment. We contact applicants as spots open.</p>
+<p>By joining, you agree to receive program updates and resources, with the option to opt out at any time.</p>
+</div>
+<div class="mt-8 flex justify-end">
+<button class="h-12 px-6 rounded-full bg-primary text-white font-bold hover:bg-primary-dark transition-colors" data-close-modal="true">Close</button>
+</div>
+</div>
+</div>
+
+<script>
+const scrollToTarget = (target) => {
+const element = document.querySelector(target);
+if (!element) return;
+element.scrollIntoView({ behavior: "smooth", block: "start" });
+};
+
+const handleAnchorClick = (event) => {
+const anchor = event.currentTarget;
+const href = anchor.getAttribute("href");
+if (!href || !href.startsWith("#")) return;
+const target = href === "#top" ? "body" : href;
+const element = document.querySelector(target);
+if (!element) return;
+event.preventDefault();
+scrollToTarget(target === "body" ? "body" : target);
+};
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+anchor.addEventListener("click", handleAnchorClick);
+});
+
+const scrollTrigger = document.querySelector("[data-scroll]");
+if (scrollTrigger) {
+scrollTrigger.addEventListener("click", () => {
+const target = scrollTrigger.getAttribute("data-scroll");
+if (target) scrollToTarget(target);
+});
+}
+
+const menuButton = document.querySelector("header button[aria-controls='mobile-menu']");
+const mobileMenu = document.getElementById("mobile-menu");
+const closeMenuButtons = mobileMenu ? mobileMenu.querySelectorAll("[data-close-menu]") : [];
+
+const toggleMenu = (open) => {
+if (!mobileMenu || !menuButton) return;
+const isOpen = open ?? mobileMenu.classList.contains("hidden");
+mobileMenu.classList.toggle("hidden", !isOpen);
+menuButton.setAttribute("aria-expanded", String(isOpen));
+document.body.classList.toggle("overflow-hidden", isOpen);
+};
+
+if (menuButton && mobileMenu) {
+menuButton.addEventListener("click", () => toggleMenu());
+closeMenuButtons.forEach((button) => button.addEventListener("click", () => toggleMenu(false)));
+mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => toggleMenu(false)));
+document.addEventListener("keydown", (event) => {
+if (event.key === "Escape" && !mobileMenu.classList.contains("hidden")) toggleMenu(false);
+});
+}
+
+const header = document.querySelector("header");
+const headerOpaqueClasses = header ? (header.dataset.opaqueClasses || "").split(" ").filter(Boolean) : [];
+const setHeaderState = () => {
+if (!header) return;
+const scrolled = window.scrollY > 0;
+if (scrolled) {
+headerOpaqueClasses.forEach((cls) => header.classList.add(cls));
+header.classList.remove("bg-transparent", "border-transparent");
+const opaqueStyle = header.dataset.opaqueStyle;
+if (opaqueStyle) {
+header.setAttribute("style", opaqueStyle);
+} else {
+header.removeAttribute("style");
+}
+} else {
+headerOpaqueClasses.forEach((cls) => header.classList.remove(cls));
+header.classList.add("bg-transparent", "border-transparent");
+header.setAttribute("style", "background-image: none; background-color: transparent;");
+}
+};
+
+setHeaderState();
+window.addEventListener("scroll", setHeaderState);
+
+const modalLinks = document.querySelectorAll("[data-modal]");
+const modalOverlays = document.querySelectorAll("[data-close-modal]");
+
+const setModalOpen = (modal, open) => {
+if (!modal) return;
+modal.classList.toggle("hidden", !open);
+modal.setAttribute("aria-hidden", String(!open));
+document.body.classList.toggle("overflow-hidden", open);
+};
+
+modalLinks.forEach((link) => {
+link.addEventListener("click", (event) => {
+const modalId = link.getAttribute("href");
+const modal = modalId ? document.querySelector(modalId) : null;
+if (!modal) return;
+event.preventDefault();
+setModalOpen(modal, true);
+});
+});
+
+modalOverlays.forEach((overlay) => {
+overlay.addEventListener("click", (event) => {
+const modal = event.currentTarget.closest("[role='dialog']");
+setModalOpen(modal, false);
+});
+});
+
+document.addEventListener("keydown", (event) => {
+if (event.key !== "Escape") return;
+document.querySelectorAll("[role='dialog']").forEach((modal) => {
+if (!modal.classList.contains("hidden")) setModalOpen(modal, false);
+});
+});
+</script>
+</div>
+</body></html>
